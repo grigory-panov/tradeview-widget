@@ -1,0 +1,10 @@
+{
+  "supported_resolutions": [
+    "60"
+  ],
+  "supports_group_request": false,
+  "supports_marks": false,
+  "supports_search": true,
+  "supports_timescale_marks": false,
+  "success": true
+}

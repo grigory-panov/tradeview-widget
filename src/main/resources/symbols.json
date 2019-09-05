@@ -1,0 +1,23 @@
+{
+  "name": "ADABTC",
+  "description": "ADABTC",
+  "session": "24x7",
+  "timezone": "Europe/Moscow",
+  "minmov" : 1,
+  "pricescale" : 100,
+  "minmove2" : 0,
+  "has_intraday": true,
+  "supported_resolutions" : [ "60"] ,
+  "intraday_multipliers" : [ "30", "60"] ,
+  "has_seconds" : false,
+  "has_daily" : false,
+  "has_weekly_and_monthly": false,
+  "has_empty_bars" : true,
+  "force_session_rebuild": true,
+  "has_no_volume" : true,
+  "volume_precision" : 0,
+  "data_status": "endofday",
+  "expired" : false,
+  "sector": "IT",
+  "industry": "IND"
+}

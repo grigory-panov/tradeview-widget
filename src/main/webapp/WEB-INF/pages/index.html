@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+	<head>
+
+		<title>TradingView Charting Library demo -- testing mess</title>
+
+		<!-- Fix for iOS Safari zooming bug -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+		<script type="text/javascript" th:src="@{/resources/js/charting_library.min.js}"></script>
+		<script type="text/javascript" th:src="@{/resources/js/dist/polyfills.js}"></script>
+		<script type="text/javascript" th:src="@{/resources/js/dist/bundle.js}"></script>
+
+		<script th:inline="javascript">
+        /*<![CDATA[*/
+        var SETTINGS = {};
+        SETTINGS.contextPath = [[@{/}]];
+        SETTINGS.signalTime=[[${signal.signalTime}]];
+        SETTINGS.startTime=[[${startTime}]];
+        SETTINGS.endTime=[[${endTime}]];
+        SETTINGS.tokenName=[[${signal.tokenName}]];
+        SETTINGS.shift=[[${shift}]];
+        SETTINGS.min=[[${signal.min}]];
+        SETTINGS.max=[[${signal.max}]];
+        SETTINGS.mid=[[${signal.mid}]];
+        SETTINGS.profit1=[[${signal.profit1}]];
+        SETTINGS.profit2=[[${signal.profit2}]];
+        SETTINGS.profit3=[[${signal.profit3}]];
+        SETTINGS.stop1=[[${signal.stop1}]];
+        SETTINGS.stop2=[[${signal.stop2}]];
+
+        SETTINGS.minPrice=[[${minPrice}]];
+        SETTINGS.maxPrice=[[${maxPrice}]];
+
+        SETTINGS.height=500;
+        SETTINGS.width=600;
+
+
+        /*]]>*/
+        </script>
+
+		<script type="text/javascript" th:src="@{/resources/js/index.js}"></script>
+
+	</head>
+
+	<body style="margin:0;">
+		<div id="tv_chart_container"></div>
+	</body>
+
+</html>
+
