@@ -21,7 +21,7 @@
         <org.thymeleaf-extra-version>3.0.2.RELEASE</org.thymeleaf-extra-version>
         <jackson.version>2.9.0</jackson.version>
         <wro4j.version>1.8.0</wro4j.version>
-        <h2.version>1.4.197</h2.version>
+        <h2.version>2.0.206</h2.version>
     </properties>
     <dependencyManagement>
         <dependencies>
